@@ -23,24 +23,24 @@ def mergeAlternately(word1: str, word2: str) -> str:
 str1 = "abc"
 str2 = "pqr"
 expected = "apbqcr"
-assert mergeAlternately(str1, str2), expected
+assert mergeAlternately(str1, str2) == expected
 
 str1 = "ab"
 str2 = "pqrs"
 expected = "apbqrs"
-assert mergeAlternately(str1, str2), expected
+assert mergeAlternately(str1, str2) == expected
 
 str1 = "abcd"
 str2 = "pq"
 expected = "apbqcd"
-assert mergeAlternately(str1, str2), expected
+assert mergeAlternately(str1, str2) == expected
 
 str1 = "abc"
 str2 = ""
 expected = "abc"
-assert mergeAlternately(str1, str2), expected
+assert mergeAlternately(str1, str2) == expected
 
 str1 = ""
 str2 = "pqr"
 expected = "pqr"
-assert mergeAlternately(str1, str2), expected
+assert mergeAlternately(str1, str2) == expected
